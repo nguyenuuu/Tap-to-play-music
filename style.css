@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-title {
+    margin-top: 10%;
+    text-align: center;
+    color: #313131;
+}
+
+.text-title h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-title p {
+    font-size: 1.5rem;
+}
+
+.box-music {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.pad1 {
+    background-color: #22f322;
+    height: 100%;
+    width: 100%;
+}
+
+.pad2 {
+    background-color: #fc4646;
+    height: 100%;
+    width: 100%;
+}
+
+.pad3 {
+    background-color: #b0f829;
+    height: 100%;
+    width: 100%;
+}
+
+.pad4 {
+    background-color: #ffa500;
+    height: 100%;
+    width: 100%;
+}
+
+.pad5 {
+    background-color: #4632ff;
+    height: 100%;
+    width: 100%;
+}
+
+.bubble {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 10%;
+    top: 0;
+    border-radius: 50%;
+    z-index: -1;
+    animation: jump 4s ease infinite;
+}
+
+@keyframes jump {
+    0% {
+        left: 10%;
+        top: 5%;
+    }
+
+    25% {
+        left: calc(50% - 25px);
+        top: -150%;
+    }
+
+    50% {
+        left: calc(90% - 50px);
+        top: 5%;
+    }
+
+    75% {
+        left: calc(50% - 25px);
+        top: -150%;
+    }
+
+    100% {
+        left: 10%;
+        top: 5%;
+    }
+}
